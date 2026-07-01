@@ -1,0 +1,16 @@
+2026-07-02 00:03:00,319 [PARALLEL] starting 4 worker processes (local pool)...
+2026-07-02 00:03:00,497 [PARALLEL] ready on 'Testdata'. Waiting for messages...
+2026-07-02 00:03:03,583 [PARALLEL] worker 4 processed seq=100/100  (100 done)
+2026-07-02 00:03:03,586 [PARALLEL] =========== PARALLEL RESULT (4 workers) ===========
+2026-07-02 00:03:03,587 [PARALLEL]   Messages processed : 100
+2026-07-02 00:03:03,588 [PARALLEL]   Total time         : 1.27 s
+2026-07-02 00:03:03,588 [PARALLEL]   Throughput         : 79 msg/s
+2026-07-02 00:03:03,589 [PARALLEL] =====================================================
+2026-07-02 00:03:03,589 [PARALLEL] (Ready for the next batch -- or press Ctrl+C to stop.)
+2026-07-02 00:03:30,787 [PARALLEL] worker 4 processed seq=100/100  (100 done)
+2026-07-02 00:03:30,788 [PARALLEL] =========== PARALLEL RESULT (4 workers) ===========
+2026-07-02 00:03:30,790 [PARALLEL]   Messages processed : 100
+2026-07-02 00:03:30,791 [PARALLEL]   Total time         : 1.27 s
+2026-07-02 00:03:30,792 [PARALLEL]   Throughput         : 79 msg/s
+2026-07-02 00:03:30,793 [PARALLEL] =====================================================
+2026-07-02 00:03:30,793 [PARALLEL] (Ready for the next batch -- or press Ctrl+C to stop.)

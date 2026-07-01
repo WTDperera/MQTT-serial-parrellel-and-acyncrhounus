@@ -1,0 +1,62 @@
+======================================================================
+ RUN ALL : starting SERIAL + PARALLEL + ASYNC subscribers together
+======================================================================
+2026-07-02 00:03:28,079 [PARALLEL] starting 4 worker processes (local pool)...
+2026-07-02 00:03:28,089 [SERIAL] ready on 'Testdata'. Waiting for messages...
+2026-07-02 00:03:28,222 [ASYNC] ready on 'Testdata'. Waiting for messages...
+2026-07-02 00:03:28,232 [PARALLEL] ready on 'Testdata'. Waiting for messages...
+>>> Firing 100 messages at topic 'Testdata' all at once...
+
+[run_all] firing publisher.py 100 -> all three at once...
+
+2026-07-02 00:03:29,517 [ASYNC] draining 100 messages CONCURRENTLY...
+2026-07-02 00:03:29,519 [SERIAL] draining 100 messages ONE BY ONE...
+>>> All 100 messages handed to the broker in 0.05 s.
+>>> Now look at the SUBSCRIBER terminal for the processing time.
+2026-07-02 00:03:29,673 [ASYNC] processed seq=100/100  (100 done)
+2026-07-02 00:03:29,673 [ASYNC] ================ ASYNC RESULT =================
+2026-07-02 00:03:29,673 [ASYNC]   Messages processed : 100
+2026-07-02 00:03:29,673 [ASYNC]   Total time         : 0.16 s
+2026-07-02 00:03:29,673 [ASYNC]   Throughput         : 641 msg/s
+2026-07-02 00:03:29,674 [ASYNC] ===============================================
+2026-07-02 00:03:30,791 [PARALLEL] worker 3 processed seq=100/100  (100 done)
+2026-07-02 00:03:30,792 [PARALLEL] =========== PARALLEL RESULT (4 workers) ===========
+2026-07-02 00:03:30,793 [PARALLEL]   Messages processed : 100
+2026-07-02 00:03:30,793 [PARALLEL]   Total time         : 1.27 s
+2026-07-02 00:03:30,793 [PARALLEL]   Throughput         : 79 msg/s
+2026-07-02 00:03:30,793 [PARALLEL] =====================================================
+2026-07-02 00:03:30,793 [PARALLEL] (Ready for the next batch -- or press Ctrl+C to stop.)
+2026-07-02 00:03:34,643 [SERIAL] processed seq=100/100  (100 done)
+2026-07-02 00:03:34,644 [SERIAL] ================ SERIAL RESULT ================
+2026-07-02 00:03:34,644 [SERIAL]   Messages processed : 100
+
+[run_all] all three reported their results above.
+
+----------------------------------------------------------------------
+ Logs saved (open these any time):
+   - C:\Users\Tharindu\Desktop\SenseGride folder\TASK 03\subscriber_serial.log
+   - C:\Users\Tharindu\Desktop\SenseGride folder\TASK 03\subscriber_parallel.log
+   - C:\Users\Tharindu\Desktop\SenseGride folder\TASK 03\subscriber_async.log
+----------------------------------------------------------------------
+ Subscribers are still listening. Fire more batches with
+   python publisher.py 100
+ or press Ctrl+C here to stop everything.
+2026-07-02 00:03:34,644 [SERIAL]   Total time         : 5.12 s
+2026-07-02 00:03:34,645 [SERIAL]   Throughput         : 20 msg/s
+2026-07-02 00:03:34,645 [SERIAL] ===============================================
+2026-07-02 00:03:34,645 [SERIAL] (Ready for the next batch -- or press Ctrl+C to stop.)
+2026-07-02 00:06:10,740 [SERIAL] draining 100 messages ONE BY ONE...
+2026-07-02 00:06:12,014 [PARALLEL] worker 3 processed seq=99/100  (100 done)
+2026-07-02 00:06:12,015 [PARALLEL] =========== PARALLEL RESULT (4 workers) ===========
+2026-07-02 00:06:12,016 [PARALLEL]   Messages processed : 100
+2026-07-02 00:06:12,017 [PARALLEL]   Total time         : 1.27 s
+2026-07-02 00:06:12,018 [PARALLEL]   Throughput         : 79 msg/s
+2026-07-02 00:06:12,018 [PARALLEL] =====================================================
+2026-07-02 00:06:12,019 [PARALLEL] (Ready for the next batch -- or press Ctrl+C to stop.)
+2026-07-02 00:06:15,857 [SERIAL] processed seq=100/100  (100 done)
+2026-07-02 00:06:15,857 [SERIAL] ================ SERIAL RESULT ================
+2026-07-02 00:06:15,857 [SERIAL]   Messages processed : 100
+2026-07-02 00:06:15,857 [SERIAL]   Total time         : 5.12 s
+2026-07-02 00:06:15,858 [SERIAL]   Throughput         : 20 msg/s
+2026-07-02 00:06:15,858 [SERIAL] ===============================================
+2026-07-02 00:06:15,858 [SERIAL] (Ready for the next batch -- or press Ctrl+C to stop.)
