@@ -14,3 +14,10 @@
 2026-07-02 00:03:30,792 [PARALLEL]   Throughput         : 79 msg/s
 2026-07-02 00:03:30,793 [PARALLEL] =====================================================
 2026-07-02 00:03:30,793 [PARALLEL] (Ready for the next batch -- or press Ctrl+C to stop.)
+2026-07-02 00:06:12,014 [PARALLEL] worker 3 processed seq=100/100  (100 done)
+2026-07-02 00:06:12,032 [PARALLEL] =========== PARALLEL RESULT (4 workers) ===========
+2026-07-02 00:06:12,033 [PARALLEL]   Messages processed : 100
+2026-07-02 00:06:12,033 [PARALLEL]   Total time         : 1.29 s
+2026-07-02 00:06:12,034 [PARALLEL]   Throughput         : 77 msg/s
+2026-07-02 00:06:12,035 [PARALLEL] =====================================================
+2026-07-02 00:06:12,036 [PARALLEL] (Ready for the next batch -- or press Ctrl+C to stop.)
