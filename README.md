@@ -1,6 +1,6 @@
 # MQTT on the SERVER side — Serial vs Parallel vs Async
 
-![MQTT Architecture Conceptual Illustration](C:/Users/Tharindu/.gemini/antigravity-ide/brain/9faf27f0-5358-48f3-b54c-2701eb9dabbc/mqtt_architecture_1782931487750.png)
+![MQTT Architecture Conceptual Illustration](assets/mqtt_architecture.png)
 
 A hands-on demo that proves **where** the concurrency problem in an IoT system
 actually lives, and **how** three different server designs cope with a flood of
